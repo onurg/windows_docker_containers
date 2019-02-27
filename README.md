@@ -29,6 +29,7 @@ View running containers:
 
 View all containers:
 - `docker ps -a`
+
 View services running under docker-compose:
 - `docker-compose ps`
 
