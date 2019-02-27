@@ -29,3 +29,6 @@ networks:
    config:
    - subnet: <Your chosen subnet prefix>
 ```
+
+* Major blocker why `zip` file needs to be manually ported over instead of a download:
+- https://github.com/docker/for-win/issues/1976
