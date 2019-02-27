@@ -31,4 +31,4 @@ networks:
 ```
 
 * Major blocker why `zip` file needs to be manually ported over instead of a download:
-- https://github.com/docker/for-win/issues/1976
+  - https://github.com/docker/for-win/issues/1976
