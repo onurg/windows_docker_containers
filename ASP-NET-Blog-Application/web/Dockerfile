@@ -5,11 +5,11 @@ RUN dism.exe /online /enable-feature /all /featurename:iis-webserver /NoRestart
 RUN powershell add-windowsfeature web-asp-net45 
 
 # # Copy and extract BlogEngine.NET project files
-COPY BlogEngineNETSrc.zip C:/BlogEngineNETSrc.zip
+COPY BlogEngine.zip C:/BlogEngine.zip
 RUN powershell -Command \
     $ErrorActionPreference = 'Stop'; \
-	Expand-Archive -Path c:\BlogEngineNETSrc.zip -DestinationPath c:\inetpub\wwwroot\blogengine ; \
-	Remove-Item c:\BlogEngineNETSrc.zip -Force
+	Expand-Archive -Path c:\BlogEngine.zip -DestinationPath c:\inetpub\wwwroot\blogengine ; \
+	Remove-Item c:\BlogEngine.zip -Force
 
 # Configure Web App
 COPY buildapp.ps1 C:/
