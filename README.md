@@ -20,23 +20,33 @@
 ### Useful commands:
 Build from Dockerfile in Powershell:
 - `Get-Content Dockerfile | docker build -`
+
 Build from Dockerfile in CMD:
 - `docker build - < Dockerfile`
+
 View running containers:
 - `docker ps`
+
 View all containers:
 - `docker ps -a`
-View services running under docker-compose
+View services running under docker-compose:
 - `docker-compose ps`
+
 View container images:
 - `docker images`
+
 View container network info:
 - `docker inspect <CONTAINER ID>`
-Remove running containers and networks:  
+
+Remove running containers and networks:
 - `docker-compose down -v`
+
 Remove container image:
 - `docker rmi <IMAGE ID>`
-Remove container: 
+
+Remove container:
 - `docker rm <CONTAINER ID>`
+
 Remove all containers and networks:
 - `docker system prune -f`
+
