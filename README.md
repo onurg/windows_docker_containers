@@ -1,5 +1,5 @@
 # Sample Windows Containers
-- Built on a Linux environment running VirtualBox
+- Built on a MacOS environment running VirtualBox
 - Tested on Windows Server 2016
 - VM created needs to have enough space (at least somewhere around 40gb) for the windows images to be downloaded
   - Each image is around 11gb+ 
