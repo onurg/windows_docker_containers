@@ -13,8 +13,14 @@
 3. Clone the repository in default directory on Powershell
 4. Create a docker network:
    `docker network create --driver nat test`
-5. Reset default network settings in Server 2016:
-   `Get-NetNat | Remove-NetNat`
+5. Refactor docker network settings:
+    ```
+    Stop-Service docker
+    Get-ContainerNetwork | Remove-ContainerNetwork -Force -ea SilentlyContinue
+    Get-NetNat | Remove-NetNat
+    Get-VMSwitch | Remove-VMSwitch -Force -ea SilentlyContinue
+    Start-Service docker
+    ```
 6. Now we're ready to build and deploy containers locally.
 
 ### Useful commands:
