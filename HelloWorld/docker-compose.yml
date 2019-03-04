@@ -1,4 +1,4 @@
-version: "3"
+version: "3.3"
 
 services:
   web:
@@ -6,8 +6,11 @@ services:
     ports:
       - 80:80
     tty: true
-    
+    volumes:
+      - source: '\\.\pipe\docker_engine'
+        target: '\\.\pipe\docker_engine'
+        type: npipe
 networks:
   default:
     external:
-     name: "test"
+     name: "nat"
