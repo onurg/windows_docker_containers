@@ -1,7 +1,8 @@
 # Sample Windows Containers
 - Images are built on a MacOS using WinServer2016 and/or a remote VM using Windows Server 1809
 - VM created needs to have enough space (at least somewhere around 40gb) for the windows images to be downloaded
-  - Each image is around 11gb+ 
+  - Core image 11gb
+  - OpenJDK 5.1gb
 
 ## Steps to Follow:
 1. Setup your VM following these steps: https://blog.couchbase.com/windows-server-2016-virtualbox-docker/
