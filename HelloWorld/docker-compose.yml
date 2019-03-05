@@ -10,7 +10,3 @@ services:
       - source: '\\.\pipe\docker_engine'
         target: '\\.\pipe\docker_engine'
         type: npipe
-networks:
-  default:
-    external:
-     name: "nat"
