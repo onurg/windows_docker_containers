@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{E76B2F56-7E15-4D7B-BC1F-2BCC966E8C66}|">
+  <MonoDevelop.Ide.ItemProperties.HelloWorldASP PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorldASP Status">
+    <Files>
+      <File FileName="HelloWorldASP Status" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HelloWorldASP" expanded="True">
+            <Node name="HelloWorldASP" expanded="True">
+              <Node name="App_Start" expanded="True" />
+              <Node name="Views" expanded="True" />
+              <Node name="Default.aspx" expanded="True">
+                <Node name="Default.aspx.cs" selected="True" />
+              </Node>
+              <Node name="Global.asax" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
