@@ -11,9 +11,7 @@
    2. Install docker-compose: https://www.ntweekly.com/2018/05/16/install-docker-compose-windows-server-2016/
    3. Install any additional tools such as Git, Python, Notepad++ as you require
 3. Clone the repository in default directory on Powershell
-4. Create a docker network:
-   `docker network create --driver nat test`
-5. Refactor docker network settings:
+4. Refactor docker network settings:
     ```
     Stop-Service docker
     Get-ContainerNetwork | Remove-ContainerNetwork -Force -ea SilentlyContinue
@@ -21,7 +19,7 @@
     Get-VMSwitch | Remove-VMSwitch -Force -ea SilentlyContinue
     Start-Service docker
     ```
-6. Now we're ready to build and deploy containers locally.
+5. Now we're ready to build and deploy containers locally.
 
 ### Useful commands:
 Build from Dockerfile in Powershell:
@@ -29,31 +27,3 @@ Build from Dockerfile in Powershell:
 
 Build from Dockerfile in CMD:
 - `docker build - < Dockerfile`
-
-View running containers:
-- `docker ps`
-
-View all containers:
-- `docker ps -a`
-
-View services running under docker-compose:
-- `docker-compose ps`
-
-View container images:
-- `docker images`
-
-View container network info:
-- `docker inspect <CONTAINER ID>`
-
-Remove running containers and networks:
-- `docker-compose down -v`
-
-Remove container image:
-- `docker rmi <IMAGE ID>`
-
-Remove container:
-- `docker rm <CONTAINER ID>`
-
-Remove all containers and networks:
-- `docker system prune -f`
-

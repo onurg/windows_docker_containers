@@ -6,7 +6,7 @@
    
 2. If Step.2 does not work:
    - `Get-Content Dockerfile | docker build -`
-   - `docker run -itd -p "80:80" <IMAGE_ID>`
+   - `docker run -itd -v \\.\pipe\docker_engine:\\.\pipe\docker_engine -p "80:80" <IMAGE_ID>`
    
 3. Once the container running, run following to get the IP of the container:
    - `docker inspect --format "{{ .NetworkSettings.IPAddress }}" <container_name_id>`
