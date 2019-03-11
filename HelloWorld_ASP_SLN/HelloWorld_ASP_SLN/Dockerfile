@@ -5,10 +5,6 @@ RUN setx path '%path%;C:\Windows\Microsoft.NET\Framework\v4.0.30319'
 
 SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
 
-# Install dotnet compiler (on demand)
-#RUN Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force; \
-#  	 Install-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -Force
-
 # Install chocolatey
 RUN Set-ExecutionPolicy Bypass -Scope Process -Force; \
 	iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
@@ -18,6 +14,11 @@ RUN choco install dotnet4.7.2 \
 	netfx-4.7.2-devpack \
 	microsoft-build-tools -y
 
+# Install dotnet compiler (on demand)
+#RUN	Install-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform \
+#	-Source https://www.nuget.org/api/v2/ -provider nuget -Force
+	
+	
 # Move built solution dlls
 ARG site_root=.
 
