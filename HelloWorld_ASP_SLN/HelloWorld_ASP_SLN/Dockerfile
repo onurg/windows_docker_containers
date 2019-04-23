@@ -17,8 +17,7 @@ RUN choco install dotnet4.7.2 \
 # Install dotnet compiler (on demand)
 #RUN	Install-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform \
 #	-Source https://www.nuget.org/api/v2/ -provider nuget -Force
-	
-	
+
 # Move built solution dlls
 ARG site_root=.
 
